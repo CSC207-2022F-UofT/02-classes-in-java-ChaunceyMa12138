@@ -201,10 +201,10 @@ public class Silly implements Comparable<Silly>{
         int other_length = other.name.length();
         int this_length = this.name.length();
         if (other_length > this_length){
-            return 1;
+            return -1;
         }
         if (other_length < this_length){
-            return -1;
+            return 1;
         }
         return 0;
     }
